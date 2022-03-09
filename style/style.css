@@ -1,0 +1,57 @@
+
+
+body {background-color: white;}
+h3 {color: black}
+
+div {background-color: white;
+    margin: 3
+}
+
+td{
+    width: 20%;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-gap: 5px;
+    height: 90%;
+}
+
+.grid-persistence {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+#svg_force{
+    border-style: solid;
+    border-color: gray;
+}
+
+
+input[type="range"] {
+    width: 50%;
+  }
+
+/* 
+.pimage {
+    border-style: dotted;
+}
+
+.rendering {
+    border-style: dotted;
+} */
+
+
+/* <div id="main-embedding">
+<div id="barchart">
+
+<div id="pImage1">
+<div id="pImage2">
+<div id="rendering1">
+<div id="rendering2"> */
+
+

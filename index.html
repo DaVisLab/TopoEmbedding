@@ -1,0 +1,133 @@
+<html>
+<header>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/d3/d3.js"></script>
+    <script src="js/threejs/three.js"></script>
+    <script src="js/inputimage.js" type="module"></script>
+    <script src="js/force.js" type="module"></script>
+    <script src="js/persistence-image.js"></script>
+    <script src="js/atlas.js"></script>
+    <script src="js/showMinkowski.js"></script>
+    <script src="js/cycle.js" type="module"></script>
+    <script src="js/updateEmbedding.js"></script>
+</header>
+
+<body>
+    <h3>TopoEmbedding</h3>
+
+
+    <table>
+      <tr>
+         <td>
+            <div> Select embedding
+
+               <select onchange="changeEmbedding(this.value)">
+                  <option value="Isomap">Isomap</option>
+                  <option value="MDS">MDS</option>
+                  <option value="t-SNE">t-SNE</option>
+                  <option value="UMAP">UMAP</option>
+               </select>
+            </div>
+         </td>
+         <td>
+            Persistence images and Persistence cycles
+         </td>
+         <td>
+            Pixel-wise differences
+         </td>
+      </tr>
+
+      <tr>
+         <td>
+            <svg id="svg_force" > </svg>
+         </td>
+         <td valign="top">
+            <table>
+               <tr>
+                  <td>Persistence Image</td>
+                  <td>Persistence Cycles</td>
+               </tr>
+               <tr>
+                  <td><svg id="svg_psImage"  > </svg></td>
+                  <td><canvas id="webgl_surface" ></canvas></td>
+               </tr>
+
+               <tr>
+                  <td>Persistence Image</td>
+                  <td>Persistence Cycles</td>
+               </tr>
+               <tr>
+                  <td><svg id="svg_psImage2"  > </svg></td>
+                  <td><canvas id="webgl_surface2" ></canvas></td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <div class="slider">
+                        <input  type="range" id = "filterCycles"></input>
+                        Filter cycles based on weights
+                      </div>
+                  </td>
+               </tr>
+               <tr>
+                <td><canvas id="webgl_surface3" ></canvas></td>
+               </tr>
+            </table>
+         </td>
+         <td valign="top">
+            <table>
+               <tr>
+                  <td>
+                     <div class="slidecontainer">
+                        <input  type="range"  id="compareRange1"  onchange="updatePersistenceImages(this.value, document.getElementById('compareRange2').value)">Set minimum difference</input><br>
+                        <input  type="range"  id="compareRange2"  onchange="updatePersistenceImages(document.getElementById('compareRange1').value, this.value)">Set maximum difference</input>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <svg id="compare"  > </svg>         
+                  </td>
+               </tr>
+            </table>
+            
+         </td>
+      </tr>
+    <table>
+     <tr>
+         <td><svg id="persistence_atlas"  > </svg></td>
+    </tr>
+    <script type="module">
+            import { loadJsonFile } from "./js/force.js"
+            loadJsonFile();
+            createWindow();
+            initiateAtlas();
+            createPersistenceImage("#svg_psImage");
+            createPersistenceImage("#svg_psImage2");
+   </script>
+    <script>
+
+      var working_on_layer1 = true
+      var folder_1, folder_2, id_1, id_2
+
+      var sizeSvg = document.body.clientWidth/10
+
+      var canv = document.getElementById( "webgl_surface" );
+      canv.setAttribute("width", sizeSvg)
+      canv.setAttribute("height", sizeSvg)
+
+      var canv = document.getElementById( "webgl_surface2" );
+      canv.setAttribute("width", sizeSvg)
+      canv.setAttribute("height", sizeSvg)
+
+      d3.select("body")
+         .on("keydown", function(e) {
+            if(e.keyCode == 93||e.keyCode == 17){
+               working_on_layer1 = !working_on_layer1;
+            }   
+         })     
+    </script>
+    
+</body>
+
+
+</html>
