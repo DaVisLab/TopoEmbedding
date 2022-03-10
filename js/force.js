@@ -43,9 +43,7 @@ function clickOnNodes(e)
   var ensemble_size = data_ensemble.length; 
   data_ensemble.push([ensemble_size, folder, id]);
   ensemble_size = data_ensemble.length;
-  createAtlas(folder, id , ensemble_size);
   
-
   loadPersistenceImage(folder,id);
  // loadImage(folder,id);
   document.getElementById('filterCycles').onchange();
