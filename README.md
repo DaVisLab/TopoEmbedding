@@ -6,7 +6,7 @@ The repository mainly consist of three folders: **data**, **js**, and **python**
 
 - **data** folder stores all the precomputed data for the visualization. Under the **data** folder:
    - **minst_png** contains the original **MNIST** images as input for persistent homology analysis. Currently we have 1000 handwritten digits (100 images per digits) stored under 10 subdirectory representing 10 digits.
-   - **minst** contains the direct output of the Topological ToolKit (TTK): the persistent diagram and cycles for each image in **minst_png**.
+   - **minst** contains the direct output from the Topological ToolKit (TTK) plugin [PersistentCyles](https://github.com/IuricichF/PersistenceCycles): the persistent diagram and cycles for each image in **minst_png**.
    - **mnist_cycles** contains the **.json** files for storing the cycles, which are used to render the cycles in the 
    - **mnist_pd** contains the **.csv** files for storing the pairs in the persistent diagrams.
    - **mnist_pi** contains the **.csv** files for storing the matrix values of persistent images.
@@ -27,12 +27,12 @@ The repository mainly consist of three folders: **data**, **js**, and **python**
     ...
     ```
     Make sure the first argument *~/ttk-clemson/ParaView-v5.6.0/build/bin/pvpython* is replaced with the correct Paraview directory.
-  - *compute_cycles.py* converts output (*vtk* files) of *compute_data.py* into *json* files for storing cycles and *csv* files for storing persistent pairs under the **mnist_cycles** and **mnist_pd** files. The **compute_cycles.py** should be run after the **compute_cycles.py**. 
+  - **compute_cycles.py* converts output (*vtk* files) of *compute_data.py* into *json* files for storing cycles and *csv* files for storing persistent pairs under the **mnist_cycles** and **mnist_pd** files. The **compute_cycles.py** should be run after the **compute_cycles.py**. 
   - **compute_pi_embedding.py** first computes the persistent images from the persistent diagrams, then computes pair-wise distance for all the persistent images, and finally computes a lower dimension embedding with one of the three dimensionality reduction techniques: Isomap, Multi-dimensional Scaling (MDS), and t-distributed Stochastic Neighbor Embedding (t-SNE).
 
 ## Installing the dependencies
 
-The persistent homology is computed using the newly developed TTK plugin at the website [PersistentCyles](https://github.com/IuricichF/PersistenceCycles) (refer to the website for additional instructions about installing TTK). Make sure the plugin is correctly installed before running *compute_data.py*
+The persistent homology is computed using the newly developed TTK plugin at the website [PersistentCyles](https://github.com/IuricichF/PersistenceCycles) (refer to the website for additional instructions about installing TTK). Make sure the plugin is correctly installed before running **compute_data.py**.
 
 Additional python libraries need to be installed for running **compute_cycles** and **compute_pi_embedding** by typing the following commands to install the dependencies:
 
