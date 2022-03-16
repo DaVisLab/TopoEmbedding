@@ -268,7 +268,7 @@ def getEmbeddings(distances, showFig=False):
     methods["Isomap"] = manifold.Isomap(n_neighbors=5, n_components=2, metric="precomputed")
     methods["MDS"] = manifold.MDS(n_components=2, dissimilarity="precomputed", random_state=0)
     methods["t-SNE"] = manifold.TSNE(n_components=2, metric="precomputed", square_distances=True, init="random", random_state=0)
-    methods["UMAP"] = umap.UMAP(n_neighbors=5, metric="precomputed", init="random", n_components=2, random_state=0)
+    # methods["UMAP"] = umap.UMAP(n_neighbors=5, metric="precomputed", init="random", n_components=2, random_state=0)
 
     # save embedding information
     embeddings = {}
