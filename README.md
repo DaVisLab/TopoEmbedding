@@ -31,13 +31,13 @@ The repository mainly consist of three folders: **data**, **js**, and **python**
   - **compute_pi_embedding.py** performs the following computation:
     - 1. Compute the persistent images from the persistent diagrams.
     - 2. Compute pair-wise distance for all the persistent images. 
-    - 3. Compute a lower dimension embedding with one of the three dimensionality reduction techniques: Isomap, Multi-dimensional Scaling (MDS), and t-distributed Stochastic Neighbor Embedding (t-SNE).
+    - 3. Compute a lower dimension embedding with one of the three dimensionality reduction techniques: **Isomap**, **Multi-dimensional Scaling (MDS)**, and **t-distributed Stochastic Neighbor Embedding (t-SNE)**.
 
 ## Installing the dependencies
 
 The persistent homology is computed using the newly developed TTK plugin at the website [PersistentCyles](https://github.com/IuricichF/PersistenceCycles) (refer to the website for additional instructions about installing TTK). Make sure the plugin is correctly installed before running **compute_data.py**.
 
-Additional python libraries need to be installed for running **compute_cycles** and **compute_pi_embedding** by typing the following commands to install the dependencies:
+Additional python libraries need to be installed for running **compute_cycles.py** and **compute_pi_embedding.py** by typing the following commands to install the dependencies:
 
 ```
 pip install -U meshio giotto-tda matplotlib scipy persim sklearn pyevtk
