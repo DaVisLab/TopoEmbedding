@@ -15,8 +15,8 @@ The repository mainly consist of three folders: **data**, **js**, and **python**
 
 - **js** folder includes the javascripts file that implements the main functionality of the **TopoEmbedding** interface. Main files include:
    - **force.js** renders the scatter plot using the **.json** file in the **mnist_embedding**.
-   - **inputimage.js** renders the persistent cycles (in the **minst_cycles** folder) over the orginal input images (in the **minst_png** folder) using **Three.js**.
-   - **persistence-image.js** renders the persistent images (in the **mnist_pi** folder) in a 10 by 10 square panel using **svg**.
+   - **inputimage.js** renders the persistent cycles (in the **minst_cycles** folder) over the orginal input images (in the **minst_png** folder) using [Theejs](https://threejs.org/).
+   - **persistence-image.js** renders the persistent images (in the **mnist_pi** folder) in a 10 by 10 square panel using [svg](https://developer.mozilla.org/en-US/docs/Web/SVG).
    - **showMinkowski.js** renders the chart showing the pixel-wise difference of two persistent images.
 
 - **python** folder includes the python scripts that do the computation for the persistence analysis pipeline. Main scripts include:
