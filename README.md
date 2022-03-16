@@ -26,8 +26,8 @@ The repository mainly consist of three folders: **data**, **js**, and **python**
       os.system("~/ttk-clemson/ParaView-v5.6.0/build/bin/pvpython ./python/ttk_generate_pairs_mnist.py image.vti "+full_path+" "+folder+" "+number);
     ...
     ```
-    Make sure the first argument *~/ttk-clemson/ParaView-v5.6.0/build/bin/pvpython* is replaced with the correct Paraview directory.
-  - **compute_cycles.py** converts output (*vtk* files) of *compute_data.py* into *json* files for storing cycles and *csv* files for storing persistent pairs under the **mnist_cycles** and **mnist_pd** files. The **compute_cycles.py** should be run after the **compute_cycles.py**. 
+    Make sure the first argument *'~/ttk-clemson/ParaView-v5.6.0/build/bin/pvpython'* is replaced with the correct Paraview directory.
+  - **compute_cycles.py** converts output (*.vtk* files) of *compute_data.py* into *.json* files for storing cycles and *.csv* files for storing persistent pairs under the **mnist_cycles** and **mnist_pd** files. The **compute_cycles.py** should be run after the **compute_cycles.py**. 
   - **compute_pi_embedding.py** first computes the persistent images from the persistent diagrams, then computes pair-wise distance for all the persistent images, and finally computes a lower dimension embedding with one of the three dimensionality reduction techniques: Isomap, Multi-dimensional Scaling (MDS), and t-distributed Stochastic Neighbor Embedding (t-SNE).
 
 ## Installing the dependencies
