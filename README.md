@@ -10,20 +10,9 @@ The repository mainly consist of three folders: **data**, **js**, and **python**
 
 **python** folder includes the python scripts that do the computation for the persistence analysis pipeline.
 
-To run the scripts, following libraries need to be installed:
+To run the scripts, typing following commands to install the dependencies:
 
-*csv*: library for reading and writing .csv files
+```
+pip install -U meshio giotto-tda matplotlib scipy persim sklearn
 
-*json*: library for reading and writing .json files
-
-*meshio*: library for reading and writing mesh format
-
-*giotto-tda*:  high-performance topological machine learning toolbox in Python built on top of [scikit-learn]
-
-*matplotlib*: a comprehensive library for creating static, animated, and interactive visualizations in Python
-
-*scipy*: open-source software for mathematics, science, and engineering. 
-
-*persim*:  a Python package for many tools used in analyzing Persistence Diagrams
-
-*sklearn*: a free machine learning library for Python.
+```
