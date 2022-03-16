@@ -10,7 +10,7 @@ The repository mainly consist of three folders: **data**, **js**, and **python**
    - **mnist_cycles** contains the **.json** files for storing the cycles. 
    - **mnist_pd** contains the **.csv** files for storing the pairs in the persistent diagrams.
    - **mnist_pi** contains the **.csv** files for storing the matrix values of persistent images.
-   - **mnist_mapping** contains the **.json** file for storing the weights of each pair to the pixels of the persistent images.
+   - **mnist_mapping** contains the **.json** file encodding the weights of each persistent pair to the pixels of the persistent images.
    - **mnist_embedding** contains **.json** file for storing the scatter plot for each embedding method.
 
 - **js** folder includes the javascripts file that implements the main functionality of the TopoEmbedding interface. Main files include:
