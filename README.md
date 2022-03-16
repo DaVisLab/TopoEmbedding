@@ -20,7 +20,7 @@ The repository mainly consist of three folders: **data**, **js**, and **python**
    - **showMinkowski.js** renders the chart showing the pixel-wise difference of two persistent images.
 
 - **python** folder includes the python scripts that do the computation for the persistence analysis pipeline. Main scripts include:
-  - The **compute_data.py** run the **ttk_generate_pairs_mnist.py**  (trace generated using *Paraview* version 5.6.0) to compute cycles and persistent diagrams for the png images under the './data/mnist_png/' directory. **mnist**, **mnist_cycles**,**mnist_pd**, **mnist_pi**, **mnist_mapping** and **mnist_embedding** directories are then automatically generated after the computation. For the code below in **compute_data.py**:
+  - **compute_data.py** run the **ttk_generate_pairs_mnist.py**  (trace generated using *Paraview* version 5.6.0) to compute cycles and persistent diagrams for the png images under the './data/mnist_png/' directory. **mnist**, **mnist_cycles**,**mnist_pd**, **mnist_pi**, **mnist_mapping** and **mnist_embedding** directories are then automatically generated after the computation. For the code below in **compute_data.py**:
     ```
     ...
       os.system("~/ttk-clemson/ParaView-v5.6.0/build/bin/pvpython ./python/ttk_generate_pairs_mnist.py image.vti "+full_path+" "+folder+" "+number);
