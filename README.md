@@ -4,11 +4,11 @@ The link of the tool is https://davislab.github.io/TopoEmbedding/
 ## Pipeline
 The repository mainly consist of three folders: **data**, **js**, and **python**.
 
-**data** folder contains 1000 handwritten digits (100 images per digit), which are the subset of the original famous MINST dataset to perform the analysis and visualization.
+- **data** folder contains 1000 handwritten digits (100 images per digit), which are the subset of the original famous MINST dataset to perform the analysis and visualization.
 
-**js** folder includes the javascripts file that implements the main functionality of the TopoEmbedding interface.
+- **js** folder includes the javascripts file that implements the main functionality of the TopoEmbedding interface.
 
-**python** folder includes the python scripts that do the computation for the persistence analysis pipeline.
+- **python** folder includes the python scripts that do the computation for the persistence analysis pipeline.
 
 To run the scripts, typing following commands to install the dependencies:
 
