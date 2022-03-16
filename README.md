@@ -5,7 +5,7 @@ The link to the tool is https://davislab.github.io/TopoEmbedding/
 The repository mainly consist of three folders: **data**, **js**, and **python**.
 
 - **data** folder stores all the precomputed data for the visualization. Under the **data** folder:
-   - **minst_png** contains the original MNIST images as input for persistent homology analysis. Currently we have 1000 handwritten digits (100 images per digits) stored under 10 subdirectory representing 10 digits.
+   - **minst_png** contains the original **MNIST** images as input for persistent homology analysis. Currently we have 1000 handwritten digits (100 images per digits) stored under 10 subdirectory representing 10 digits.
    - **minst** contains the direct output of the Topological ToolKit (TTK): the persistent diagram and cycles for each image in **minst_png**.
    - **mnist_cycles** contains the **.json** files for storing the cycles, which are used to render the cycles in the 
    - **mnist_pd** contains the **.csv** files for storing the pairs in the persistent diagrams.
