@@ -1,6 +1,7 @@
 # TopoEmbedding
 Existing software libraries for Topological Data Analysis (TDA) offer limited support for interactive visualization. Most libraries only allow to visualize topological descriptors (e.g., persistence diagrams), and lose the connection with the original domain of data. This makes it challenging for users to interpret the results of a TDA pipeline in an exploratory context. **TopoEmbedding** is a web-based tool that simplifies the interactive visualization and analysis of persistence-based descriptors. **TopoEmbedding** allows non-experts in TDA to explore similarities and differences found by TDA descriptors with simple yet effective visualization techniques.  
 The link to the tool is https://davislab.github.io/TopoEmbedding/
+Press **CTRL** to switch between two groups of panels for showing the descriptors. Click the "help?" button in the top right corner of the website to quickly go through an introduction to the website.
 
 The repository mainly consist of three folders: **data**, **js**, and **python**.
 
