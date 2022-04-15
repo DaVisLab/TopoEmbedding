@@ -1,0 +1,22 @@
+{
+  "name": "topoembedding",
+  "version": "1.0.0",
+  "description": "TopoEmbedding is a web based tool for the interactive analysis of the persistent homology.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaVisLab/TopoEmbedding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaVisLab/TopoEmbedding/issues"
+  },
+  "homepage": "https://github.com/DaVisLab/TopoEmbedding#readme",
+  "devDependencies": {
+    "http-server": "^0.7.5"
+  }
+}

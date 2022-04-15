@@ -9,22 +9,26 @@
     <script src="js/showMinkowski.js"></script>
     <script src="js/cycle.js" type="module"></script>
     <script src="js/updateEmbedding.js"></script>
+    <link rel="stylesheet" href="js/introjs.css">
+    <script src="js/intro.js"></script>  
+    <script src="js/onboarding.js"></script>
 </header>
 
 <body>
-    <h3>TopoEmbedding</h3>
-
-
+    
+    <h3>TopoEmbedding</h3> 
+    <help>
+        <a id="help" href="javascript:void(0);" onclick = "helpOnClick();" style="margin-right: 10px;">help?</a>
+    </help>
     <table>
       <tr>
          <td>
-            <div> Select embedding
-
-               <select onchange="changeEmbedding(this.value)">
-                  <option value="Isomap">Isomap</option>
-                  <option value="MDS">MDS</option>
-                  <option value="t-SNE">t-SNE</option>
-               </select>
+            <div id = "selectEmbeddingDiv"> Select embedding
+                   <select onchange="changeEmbedding(this.value)">
+                      <option value="Isomap">Isomap</option>
+                      <option value="MDS">MDS</option>
+                      <option value="t-SNE">t-SNE</option>
+                   </select>
             </div>
          </td>
          <td>
@@ -37,7 +41,7 @@
 
       <tr>
          <td>
-            <svg id="svg_force" > </svg>
+             <svg id="svg_force" > </svg>
          </td>
          <td valign="top">
             <table>

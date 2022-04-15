@@ -11,7 +11,11 @@ td{
     width: 20%;
 }
 
-
+help {
+  position: fixed;
+  top: 20;
+  right: 20;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 50% 1fr;
