@@ -29,7 +29,7 @@ The repository mainly consist of three folders: **data**, **js**, and **python**
     ...
     ```
     Make sure the first argument *'~/ttk-clemson/ParaView-v5.6.0/build/bin/pvpython'* is replaced with the correct Paraview directory.
-  - **compute_cycles.py** converts output (*.vtk* files) of **compute_data.py** into *.json* files for storing cycles and *.csv* files for storing persistent pairs under the **mnist_cycles** and **mnist_pd** folders. The **compute_cycles.py** should be run after the **compute_cycles.py**. 
+  - **compute_cycles.py** converts output (*.vtk* files) of **compute_data.py** into *.json* files for storing cycles and *.csv* files for storing persistent pairs under the **mnist_cycles** and **mnist_pd** folders. The **compute_cycles.py** should be run after the **compute_data.py**. 
   - **compute_pi_embedding.py** performs the following computation:
     - 1. Compute the persistent images from the persistent diagrams.
     - 2. Compute pair-wise distance for all the persistent images. 
